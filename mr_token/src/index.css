@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+  box-sizing: border-box;
+  place-items: center;
+  background-color: #F2CE1B
+}
+
+header {
+  display: grid;
+  
+}

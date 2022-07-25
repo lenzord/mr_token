@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'sans-serif';
+  font-family: 'Monaco', sans-serif;
   box-sizing: border-box;
   place-items: center;
   background-image: url("./images/senior-hardworking-farmer-agronomist-in-soybean-field-checking-crops-before-harvest.jpg");
@@ -44,15 +44,28 @@ p {
 .paper-button a {
   color: white;
   padding: 12px;
+  margin: 9px;
+  justify-content: space-between;
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
+  background-color: rgb(204, 132, 25);
+  border: 2px rgb(255, 255, 255) solid;
   border-radius: 4px;
+}
+
+.paper-button a:nth-child(1) {
+  background-color: rgb(158, 173, 154);
+  color: black;
 }
 
 .paper-button a:nth-child(1):hover {
   background-color: white;
   color: black;
+}
+
+.paper-button a:nth-child(2) {
+  background-color: rgb(204, 132, 25);
 }
 
 .paper-button a:nth-child(2):hover {
@@ -113,6 +126,8 @@ p {
 .main-text {
   color: white;
   letter-spacing: 2px;
+  margin: 0 20%;
+  text-align: center;
   text-transform: uppercase;
   text-shadow: 2px 2px black;
 }
@@ -142,6 +157,11 @@ p {
     margin: 0 4%;
     align-items: center;
   }
+
+  .content-card p {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .secondary-text {
@@ -160,6 +180,7 @@ p {
 
 .content-card {
   display: grid;
+  color: white;
   position: relative;
   margin: 0 4%;
   padding: 50px 0;
@@ -182,18 +203,18 @@ p {
 }
 
 .card-info-logo {
+  content: url(./images/image0.jpeg);
   height: 80px;
   width: 80px;
   max-width: 100%;
   background: white;
-  filter: drop-shadow(0 0 0.75rem rgb(247, 213, 219));
+  filter: drop-shadow(0 0 0.75rem rgb(151, 240, 139));
 }
 
 .card-second-row {
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
-  font-size: 0.8rem;
 }
 
 .page-footer {
@@ -225,7 +246,7 @@ p {
 .progress-inner .progress-bar {
   background-color: rgba(255, 255, 255, 0);
   background-size: 14px 32px;
-  background-image: linear-gradient(60deg, rgba(233, 14, 14, 0.15) 26%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 54%, rgba(255, 255, 255, 0.15) 82%, transparent 75%, transparent);
+  background-image: linear-gradient(60deg, rgba(117, 228, 27, 0.658) 26%, transparent 25%, transparent 50%, rgba(84, 221, 29, 0.15) 54%, rgba(114, 201, 32, 0.342) 82%, transparent 75%, transparent);
   height: 12px;
 }
 
@@ -247,7 +268,7 @@ p {
 }
 
 .progress-inner .progress-bar {
-  background-image: linear-gradient(60deg, #88f30e 26%, transparent 25%, transparent 50%, #fffb12 54%, #2858c0 82%, transparent 75%, transparent);
+  background-image: linear-gradient(60deg, #f3d10e 26%, transparent 25%, transparent 50%, #92ee1a 54%, #46c028 82%, transparent 75%, transparent);
 }
 
 .progress-bar-striped {
@@ -272,9 +293,26 @@ p {
   transition: var(--bs-progress-bar-transition);
 }
 
-.content_input {
+.content-input {
   display: flex;
   padding: 20px 0;
-  color: black;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  color: white;
+}
+
+.content-input input {
+  height: 20px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.buy-button button{
+  margin: 10px;
+  padding: 10px;
+  width: 70px;
+  border-radius: 5px;
 }

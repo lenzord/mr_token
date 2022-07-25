@@ -24,15 +24,15 @@ function MainComponent() {
   const [{ valueSale }, dispatch] = useReducer(reducer, { valueSale: 0 });
   const [viewTokenQty, setViewToken] = useState<number>(0)
   useMemo(() => setViewToken(valueSale), [valueSale]);
-  const buyToken = async () => {
-
-  }
+  const buyToken = async () => { }
 
   return (
     <div className="main-app">
       <div className="main-header">
         <div className="header-logo">
-          <img alt="company-logo" />
+          <a href="https://octcoin.com.br/">
+            <img alt="company-logo" />
+          </a>
         </div>
       </div>
       <div className="main-content">
@@ -58,7 +58,9 @@ function MainComponent() {
       <div id="card-info">
         <div className="content-card">
           <div className="card-first-row">
-            <div className="card-info-logo">Sample img</div>
+            <div className="card-info-logo">
+              <img alt="token-logo" />
+            </div>
             <div className="card-sale-price">
               <span>TOKEN-SALE</span>
               <p>Price:U$0.01</p>
@@ -97,12 +99,13 @@ function MainComponent() {
           </div>
         </div>
       </div>
-      <div className="content_input">
+      <div className="content-input">
+        <span>Enter token quantity:</span>
         <input placeholder={'0.0 BUSD'} value={valueSale} onChange={(e) => dispatch({ type: "defineValue", valueSale: e.target.value })} />
-        { viewTokenQty }
-      </div>
-      <div className="buy_button">
+        {viewTokenQty}
+      <div className="buy-button">
         <button onClick={() => buyToken()}>BUY</button>
+      </div>
       </div>
       <div className="page-footer">
         <footer />

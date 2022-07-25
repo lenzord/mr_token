@@ -8,13 +8,27 @@ body {
   background-size: cover;
 }
 
+p {
+  font-size: 0.8em;
+  color: rgb(16, 18, 24)
+}
+
 .main-header {
   display: flex;
   overflow: hidden;
   justify-content: space-between;
   text-align: center;
   padding: 20px 10px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
+}
+
+.paper-button {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
 }
 
 .main-header a {
@@ -25,6 +39,25 @@ body {
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
+}
+
+.paper-button a {
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.paper-button a:nth-child(1):hover {
+  background-color: white;
+  color: black;
+}
+
+.paper-button a:nth-child(2):hover {
+  background-color: rgb(134, 88, 26);
+  color: black;
 }
 
 .main-header a:hover {
@@ -74,13 +107,83 @@ body {
   margin-bottom: 40px;
   max-width: 240px;
   border-radius: 6%;
-  border-style: solid;
 }
 
 .main-text {
   color: white;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px black;
 }
 
 .secondary-text {
   color: #F2CE1B;
+  max-width: 400px;
+  font-size: 1.2em;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+.card-info {
+  display: grid;
+  color: white;
+  margin: 0 20%;
+  padding: 30px 0;
+  background: radial-gradient(circle,#08eb14 -74%,#1E1F35 80%);
+  filter: drop-shadow(10px 8px 4px #070807);
+  gap: 2em;
+}
+
+.card-first-row {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: 0 4%;
+  align-items: center;
+}
+
+.card-info-logo {
+  height: 80px;
+  width: 80px;
+  max-width: 100%;
+  background: white;
+  filter: drop-shadow(0 0 0.75rem rgb(247,213,219));
+}
+
+.card-second-row {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3,1fr);
+  font-size: 0.8rem;
+}
+
+.page-footer {
+  padding: 50px
+}
+
+.card-third-row {
+  display: grid;
+  justify-items: center;
+}
+
+.progress {
+  position: relative;
+  width: 710px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress__fill {
+  width: 50%;
+  height: 100%;
+  background: rgb(73, 71, 71);
+}
+
+.progress__text {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  font: bold 14px;
+  color: black;
 }

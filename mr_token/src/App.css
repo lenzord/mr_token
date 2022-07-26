@@ -31,16 +31,6 @@ p {
   text-decoration: none;
 }
 
-.main-header a {
-  float: left;
-  color: black;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-}
-
 .paper-button a {
   color: white;
   padding: 12px;
@@ -73,20 +63,6 @@ p {
   color: black;
 }
 
-.main-header a:hover {
-  background-color: rgb(41, 141, 28);
-  color: black;
-}
-
-.main-header a:active {
-  background-color: rgb(24, 51, 13);
-  color: white;
-}
-
-.header-content {
-  float: right
-}
-
 .header-logo {
   content: url(./images/Logo_Mercado_Rural\ PARA\ O\ SITE\ FUNDO\ TRANSPARENTE\ OP1-04.png);
   width: auto;
@@ -108,7 +84,6 @@ p {
 .main-content {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   flex-direction: column;
   max-width: 100%;
 }

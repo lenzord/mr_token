@@ -30,7 +30,7 @@ function MainComponent() {
     <div className="main-app">
       <div className="main-header">
         <div className="header-logo">
-          <a href="https://octcoin.com.br/">
+          <a href="https://octcoin.com.br/" target="_blank" rel="noreferrer">
             <img alt="company-logo" />
           </a>
         </div>

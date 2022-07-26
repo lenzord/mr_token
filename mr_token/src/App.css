@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Monaco', sans-serif;
+  font-family: 'Helvetica';
   box-sizing: border-box;
   place-items: center;
   background-image: url("./images/senior-hardworking-farmer-agronomist-in-soybean-field-checking-crops-before-harvest.jpg");
@@ -63,7 +63,7 @@ p {
   color: black;
 }
 
-.header-logo {
+.header-logo > a{
   content: url(./images/Logo_Mercado_Rural\ PARA\ O\ SITE\ FUNDO\ TRANSPARENTE\ OP1-04.png);
   width: auto;
   height: 50px;
@@ -99,6 +99,7 @@ p {
 }
 
 .main-text {
+  font-family: "Arial";
   color: white;
   letter-spacing: 2px;
   margin: 0 20%;
@@ -286,8 +287,10 @@ p {
 }
 
 .buy-button button{
+  font-family: "Arial";
   margin: 10px;
   padding: 10px;
   width: 70px;
   border-radius: 5px;
+  background-color: rgb(255, 196, 87);
 }

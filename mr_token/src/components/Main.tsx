@@ -89,7 +89,7 @@ function MainComponent() {
               <div className="progress-inner progress-inner_v2">
                 <div className="progress">
                   <div className="progress-bar progress-bar-striped" aria-labelledby="loadinglabel" role="progressbar" aria-valuenow={10} style={{
-                    width: `${60}%`,
+                    width: `${69}%`,
                     overflow: 'hidden'
                   }}>
                   </div>
